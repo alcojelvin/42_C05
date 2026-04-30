@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int ft_iterative_power(int nt, int power)
+int ft_iterative_power(int nb, int power)
 {
     int res = 1;
 
@@ -8,7 +8,7 @@ int ft_iterative_power(int nt, int power)
         return (0);    
     while (power > 0)
     {
-        res *= nt;
+        res *= nb;
         power--;
     }
     return (res);
@@ -27,9 +27,9 @@ char    *ft_putnbr(int nb)
 
 int main(void)
 {
-    int nt = 2;
+    int nb = 2;
     int pwr = 4;
-    int res = ft_iterative_power(nt, pwr);;
+    int res = ft_iterative_power(4, 4);;
     write(1, ft_putnbr(res), 1);
     write(1, "\n", 1);
 }
