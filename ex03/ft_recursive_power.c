@@ -25,6 +25,6 @@ char    *ft_putnbr(int nb)
 int main(void)
 {
     int res = ft_recursive_power(4, 4);
-    write(1, ft_putnbr(res), 1);
+    ft_putnbr(res);
     write(1, "\n", 1);
 }
